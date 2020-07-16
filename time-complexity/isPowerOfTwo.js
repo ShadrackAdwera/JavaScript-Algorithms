@@ -1,16 +1,18 @@
-// const isPowerOfTwo = (n) => {
-//     let dividedNumber = n
-//     if(n<1) {
-//       return false
-//     }
-//     while(dividedNumber !==1) {
-//       if(dividedNumber % 2 !==0) {
-//         return false
-//       }
-//       dividedNumber = dividedNumber / 2
-//     }
-//     return true
-//   }
+//SOLUTION 1
+
+const isPowerOfTwo = (n) => {
+    let dividedNumber = n
+    if(n<1) {
+      return false
+    }
+    while(dividedNumber !==1) {
+      if(dividedNumber % 2 !==0) {
+        return false
+      }
+      dividedNumber = dividedNumber / 2
+    }
+    return true
+  }
 
 //Best Case: Number not divisible by 2 => Constant Time Complexity: O(1)
 //Average Case: Number divisible by  2 but not a power of 2 => Logarithmic Time Complexity => O(log n)
@@ -24,7 +26,7 @@ console.log(isPowerOfTwo(36));
 console.log(isPowerOfTwo(1125899906842624));
 
 
-
+//_________________________________________________________________________________________________________________
 
 
 //SOLUTION TWO: Bitwise 'and'

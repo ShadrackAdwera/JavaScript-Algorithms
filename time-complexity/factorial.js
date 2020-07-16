@@ -1,3 +1,5 @@
+//SOLUTION 1
+
 const factorial = (n) => {
   let product = 1;
   if (n <= 1) {
@@ -14,6 +16,7 @@ console.log(factorial(3));
 console.log(factorial(4));
 console.log(factorial(5));
 
+//_______________________________________________________________________________________-
 
 //SOLUTION 2 : RECURSION
 

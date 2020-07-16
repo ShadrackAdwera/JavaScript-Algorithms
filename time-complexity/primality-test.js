@@ -18,6 +18,8 @@ const isPrime = (n) => {
   console.log(isPrime(1))
   console.log(isPrime(27277))
 
+  //____________________________________________________________________________________________
+
   //SOLUTION 2
   const isPrime = (n) => {
     for (let i = 2; i <= Math.sqrt(n); i++) { // 1
