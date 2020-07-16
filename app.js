@@ -18,4 +18,4 @@ const searchNums = (arry, num, offset) => {
  
  const arry = [91,93,96,84,93,82,66,21,8,61,34,42,58,3,74,44,67,16,36,76,29,64,49,32,5,17,79,64,71,29]
  
- console.log(searchNums(arry, 8, 0))
+ console.log(searchNums(arry, 61, 0))
