@@ -13,3 +13,6 @@ const colors = ['Blue','Red','Yellow', 'Black', 'White','Brown']
 const sizes = ['xs','S','M','L','XL']
 
 console.log(cartProduct(colors, sizes))
+
+//Time Complexity: O(n*m)
+//Space Complexity: O(n*m)
