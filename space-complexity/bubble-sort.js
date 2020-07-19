@@ -1,7 +1,7 @@
 const bubbleSort = arry => {
   for(let outer = 0; outer<arry.length; outer++) {
       let outerElement = arry[outer]
-      for(let inner = 0; inner<arry.length; inner++) {
+      for(let inner = outer+1; inner<arry.length; inner++) {
           let innerElement = arry[inner]
           if(outerElement>innerElement) {
             innerElement = arry[outer]
