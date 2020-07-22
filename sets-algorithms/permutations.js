@@ -28,3 +28,5 @@ const getPermutations = arry => {
 const toDo = ['Pretend to work','Try to look busy','Go home','Go for a run']
 
 console.log(getPermutations(toDo))
+
+//Time Complexity: O(n!)
