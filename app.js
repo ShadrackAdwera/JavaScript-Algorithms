@@ -1,30 +1,13 @@
-//Permutations: An ordered combination of values
-// Types: Without and with repetition
-
-//Without Repetition: eg. TO-DO List : Multiple combinations with every task done once
-//With Repetition: eg. Password Combination: Multiple combinations with values allowed to repeat themselves
-
-const getPermutations = arry => {
-    const permutations = []
-    if(arry.length===1) {
-        return [arry]
-    }
-
-    const partialPermutations = getPermutations(arry.slice(1))
-
-    const firstOption = arry[0]
-
-    for(let i = 0; i<partialPermutations.length; i++) {
-        const partialPermutation = partialPermutations[i]
-        for(let j = 0; j<=partialPermutation.length; j++) {
-            const permInfront = partialPermutation.slice(0,j)
-            const permAfter = partialPermutation.slice(j)
-            permutations.push(permInfront.concat([firstOption],permAfter))
+const cartProduct = (arry1, arry2) => {
+    const combineArray = []
+    for(let i = 0; i<arry1.length; i++) {
+        for(let j = 0; j<arry2.length; j++) {
+            combineArray.push([arry1[i], arry2[j]])
         }
     }
-    return permutations
+    return combineArray
 }
 
-const toDo = ['Pretend to work','Try to look busy','Go home','Go for a run']
-
-console.log(getPermutations(toDo))
+const a = ['mother','jammer', 'mbwa', 'kali']
+const b = ['lala', 'chini', 'ndume']
+console.log(cartProduct(a,b))
