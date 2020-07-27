@@ -17,8 +17,8 @@ const knapsack = (items, capacity) => {
 }
 
 const itemsArray = [
-    { name: 'b', value: 6, weight: 8 },
     { name: 'a', value: 3, weight: 3 },
+    { name: 'b', value: 6, weight: 8 },
     { name: 'c', value: 10, weight: 3 },
     { name: 'd', value: 4, weight: 2 },
   ];

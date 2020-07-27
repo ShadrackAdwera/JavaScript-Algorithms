@@ -37,4 +37,6 @@ const knapsack = (items, capacity, itemIndex) => {
   ];
   
   console.log(knapsack(itemsArray, 8, itemsArray.length - 1));
+
+  //Time Complexity: O(2^n)
   
