@@ -1,5 +1,3 @@
-const { count } = require("console")
-
 const selectedChange = (coins, amount) => {
 
     let remainingAmount = amount
@@ -22,5 +20,3 @@ const selectedChange = (coins, amount) => {
 
 const coins = [100,50,20,10,5,2,1]
 console.log(selectedChange(coins, 129))
-
-//Time Complexity O(n)
